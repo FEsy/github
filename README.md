@@ -44,4 +44,4 @@ github
 	$ ssh -T FEsy.github.com	
 	
 	结果如下	
-	![登录成功](https://github.com/FEsy/github/blob/master/img/gitlogin.png)
+![登录成功](https://github.com/FEsy/github/blob/master/img/gitlogin.png)
