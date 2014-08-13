@@ -8,27 +8,27 @@ github
 $ ssh-keygen -t rsa -C “mashuangshaung@Lirange.com”;
 保存ssh keys为work_rsa
 ###2.添加新的身份信息###
-$ eval “(ssh-agent -s)”
+$ eval “(ssh-agent -s)”												
 $ ssh-add ～/.ssh/work_rsa
 ###3.配置/.ssh/config###
 .ssh目录下新建config文件，我们需要通过Host别名，将不同的账号区分开来。			
 
 `
-Host mashuangshuang.github.com				
-	HostName github.com				
-	PreferredAuthentications publickey			
-	IdentityFile ~/.ssh/id_rsa		
+	Host mashuangshuang.github.com				
+		HostName github.com				
+		PreferredAuthentications publickey			
+		IdentityFile ~/.ssh/id_rsa		
 `
 
 `
-Host FEsy.github.com
-	HostName github.com
-	PreferredAuthentications publickey
-	IdentityFile ~/.ssh/FEsy_rsa
+	Host FEsy.github.com
+		HostName github.com
+		PreferredAuthentications publickey
+		IdentityFile ~/.ssh/FEsy_rsa
 `
 `
-Host work.XXX.com
-	HostName XXX.com
-	PreferredAuthentications publickey
-	IdentityFile ~/.ssh/work_rsa
+	Host work.XXX.com
+		HostName XXX.com
+		PreferredAuthentications publickey
+		IdentityFile ~/.ssh/work_rsa
 `
