@@ -11,12 +11,13 @@ $ ssh-keygen -t rsa -C “mashuangshaung@Lirange.com”;
 $ eval “(ssh-agent -s)”
 $ ssh-add ～/.ssh/work_rsa
 ###3.配置/.ssh/config###
-.ssh目录下新建config文件，我们需要通过Host别名，将不同的账号区分开来。
+.ssh目录下新建config文件，我们需要通过Host别名，将不同的账号区分开来。			
+
 `
-Host mashuangshuang.github.com
-	HostName github.com
-	PreferredAuthentications publickey	
-	IdentityFile ~/.ssh/id_rsa
+Host mashuangshuang.github.com				
+	HostName github.com				
+	PreferredAuthentications publickey			
+	IdentityFile ~/.ssh/id_rsa		
 `
 
 `
