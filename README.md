@@ -15,7 +15,7 @@ $ ssh-add ～/.ssh/work_rsa
 `
 Host mashuangshuang.github.com
 	HostName github.com
-	PreferredAuthentications publickey
+	PreferredAuthentications publickey	
 	IdentityFile ~/.ssh/id_rsa
 `
 
