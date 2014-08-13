@@ -36,3 +36,12 @@ github
 		HostName XXX.com	
 		PreferredAuthentications publickey	
 		IdentityFile ~/.ssh/work_rsa	
+
+###4.登录测试###
+
+	$ ssh -T mashuangshaung.github.com	
+	
+	$ ssh -T FEsy.github.com	
+	
+	结果如下	
+	![登录成功](./img/gitlogin.jpg)
