@@ -1,9 +1,11 @@
 github
 ======
 
-##多个github账号的ssh keys 支持##
+##多个github账号的多ssh keys 配置##
 同一个机子上对多个github账号操作会有什么影响；						
 导致只有一个ssh keys而无法提交，所以需要配置多个ssh keys（只要你知道对方的账号和密码是可以提交的)
+
+
 
 ###1.创建另外一对ssh keys 为work_rsa###
 	$ ssh-keygen -t rsa -C “mashuangshaung@Lirange.com”;
