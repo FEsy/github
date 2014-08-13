@@ -12,17 +12,22 @@ $ eval “(ssh-agent -s)”
 $ ssh-add ～/.ssh/work_rsa
 ###3.配置/.ssh/config###
 .ssh目录下新建config文件，我们需要通过Host别名，将不同的账号区分开来。
+`
 Host mashuangshuang.github.com
 	HostName github.com
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_rsa
+`
 
+`
 Host FEsy.github.com
 	HostName github.com
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/FEsy_rsa
-
+`
+`
 Host work.XXX.com
 	HostName XXX.com
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/work_rsa
+`
